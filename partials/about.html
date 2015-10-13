@@ -1,0 +1,27 @@
+<section>
+    <br>
+    <br>
+    <br>
+    <div class="container">
+    <div class="row" ng-controller="AboutController">
+        
+                <div class="col-xs-3">
+
+ <p>Your region: {{location.region}}</p>
+  
+   <p>   Your country: {{location.country}} </p>
+        </div>
+
+    <div class="col-xs-6">
+
+<uib-tabset>
+    <uib-tab heading="Why?">This application was developed for my Master"s thesis project.</uib-tab>
+    <uib-tab ng-repeat="tab in tabs" heading="{{tab.title}}" active="tab.active">
+      {{tab.content}}
+    </uib-tab>
+   
+  </uib-tabset>
+        </div>
+</div>
+</div>
+</section>

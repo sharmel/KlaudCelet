@@ -1,0 +1,298 @@
+<section>
+<br>
+           <br> <br>
+           <br>
+<div class="container">
+<div class="row">
+<div class="col-xs-9">
+    
+    
+ <div ng-controller="BuyRentController">
+  
+<form name="form"  class="css-form" novalidate>
+     
+<!--          <pre>user = {{user.alignment + user.maturity}} </pre>-->
+          <pre>Enter a number between 0 - 1</pre>
+
+     
+      <fieldset id="itCondition" title="IT Condition">
+		<legend>IT Condition</legend>
+      
+       <div class="form-group">
+        <label class="control-label col-md-4" for="itmaturity">IT Maturity</label>
+         <div class="col-md-6">
+   <input type="number" ng-model="user.maturity" name="maturity" class="form-control" id="itmaturity" placeholder="Enter a number" min="0" max="1" required>
+     <div ng-show="form.$submitted || form.maturity.$touched">
+      <div ng-show="form.maturity.$error.required">Enter a number between 0-1</div>
+      <span ng-show="form.maturity.$error.min || form.maturity.$error.max">
+      The value must be in range 0 to 1!</span>
+    </div>
+     </div>
+     
+    
+      </div>
+      
+      <div class="form-group">
+        <label class="control-label col-md-4" for="itcomplexity">IT Complexity</label>
+        <div class="col-md-6">
+   <input type="number" ng-model="user.complexity" name="complexity"class="form-control" id="itmaturity" placeholder="Enter a number" min="0" max="1" required>
+         <div ng-show="form.$submitted || form.complexity.$touched">
+      <div ng-show="form.complexity.$error.required">Enter a number between 0-1</div>
+      <span ng-show="form.complexity.$error.min || form.complexity.$error.max">
+      The value must be in range 0 to 1!</span>
+          </div>
+      </div>
+      
+      <div class="form-group">
+        <label class="control-label col-md-4" for="itcompatibility">IT Compatibility</label>
+        <div class="col-md-6">
+   <input type="number" ng-model="user.compatibility" name="compatibility"class="form-control" id="itmaturity" placeholder="Enter a number" min="0" max="1" required>
+         <div ng-show="form.$submitted || form.compatibility.$touched">
+      <div ng-show="form.compatibility.$error.required">Enter a number between 0-1</div>
+      <span ng-show="form.compatibility.$error.min || form.compatibility.$error.max">
+      The value must be in range 0 to 1!</span>
+          </div>
+          </div>
+      </div>
+      
+      <div class="form-group">
+        <label class="control-label col-md-4" for="legacy_systems">Dependency on Legacy System</label>
+        <div class="col-md-6">
+   <input type="number" ng-model="user.legacy_system" name="legacy_system"class="form-control" id="itmaturity" placeholder="Enter a number" min="0" max="1" required>
+         <div ng-show="form.$submitted || form.legacy_system.$touched">
+      <div ng-show="form.legacy_system.$error.required">Enter a number between 0-1</div>
+      <span ng-show="form.legacy_system.$error.min || form.legacy_system.$error.max">
+      The value must be in range 0 to 1!</span>
+          </div>
+          </div>
+      </div>
+      
+
+   
+        </fieldset>
+        
+  <fieldset id="itDependant" title="IT Dependant">
+		<legend>IT Dependant</legend>
+		
+		
+		
+		 <div class="form-group">
+        <label class="control-label col-md-4" for="itmaturity">Expected Level of IT Change</label>
+         <div class="col-md-6">
+   <input type="number" ng-model="user.it_change" class="form-control" id="it_change" placeholder="Enter a number" required>
+     </div>
+      </div>
+      
+      <div class="form-group">
+        <label class="control-label col-md-4" for="itcomplexity">Intended Cloud Coverage</label>
+        <div class="col-md-6">
+   <input type="number" ng-model="user.cloud_coverage" class="form-control" id="cloud_coverage" placeholder="Enter a number" required>
+          </div>
+      </div>
+      
+      <div class="form-group">
+        <label class="control-label col-md-4" for="itcompatibility">In-house IT Workload</label>
+        <div class="col-md-6">
+   <input type="number" ng-model="user.it_workload" class="form-control" id="it_workload" placeholder="Enter a number" required>
+          </div>
+      </div>
+      
+      <div class="form-group">
+        <label class="control-label col-md-4" for="legacy_systems">Desired IT Control</label>
+        <div class="col-md-6">
+   <input type="number" ng-model="user.it_control" class="form-control" id="it_control" placeholder="Enter a number" required>
+          </div>
+      </div>
+      
+      
+      
+     </fieldset>
+     
+     <fieldset id="Sensitivity" title="Sensitivity">
+		<legend>Data Sensitivity and Risk</legend>
+		
+		
+		
+		 <div class="form-group">
+        <label class="control-label col-md-4" for="itmaturity">Data Significance</label>
+         <div class="col-md-6">
+   <input type="number" ng-model="user.data_significance" class="form-control" id="data_significance" placeholder="Enter a number" required>
+     </div>
+      </div>
+      
+      <div class="form-group">
+        <label class="control-label col-md-4" for="itcomplexity">Data Confidentiality</label>
+        <div class="col-md-6">
+   <input type="number" ng-model="user.data_confidentiality" class="form-control" id="data_confidentiality" placeholder="Enter a number" required>
+          </div>
+      </div>
+      
+      <div class="form-group">
+        <label class="control-label col-md-4" for="itcompatibility">Natural Disaster Risks</label>
+        <div class="col-md-6">
+   <input type="number" ng-model="user.disaster_risks" class="form-control" id="disaster_risks" placeholder="Enter a number" required>
+          </div>
+      </div>
+      
+      <div class="form-group">
+        <label class="control-label col-md-4" for="legacy_systems">IT Failure Rate</label>
+        <div class="col-md-6">
+   <input type="number" ng-model="user.failure_rate" class="form-control" id="failure_rate" placeholder="Enter a number" required>
+          </div>
+      </div>
+   
+      
+     </fieldset>
+     
+     <fieldset id="Availability" title="IT Availability">
+		<legend>Resource Availability</legend>
+		
+		
+		
+		 <div class="form-group">
+        <label class="control-label col-md-4" for="itmaturity">In-house IT Support</label>
+         <div class="col-md-6">
+   <input type="number" ng-model="user.it_support" class="form-control" id="it_support" placeholder="Enter a number" required>
+     </div>
+      </div>
+      
+      <div class="form-group">
+        <label class="control-label col-md-4" for="itcomplexity">Manpower</label>
+        <div class="col-md-6">
+   <input type="number" ng-model="user.manpower" class="form-control" id="manpower" placeholder="Enter a number" required>
+          </div>
+      </div>
+      
+      <div class="form-group">
+        <label class="control-label col-md-4" for="itcompatibility">IT Skills</label>
+        <div class="col-md-6">
+   <input type="number" ng-model="user.it_skills" class="form-control" id="it_skills" placeholder="Enter a number" required>
+          </div>
+      </div>
+      
+      <div class="form-group">
+        <label class="control-label col-md-4" for="legacy_systems">Time</label>
+        <div class="col-md-6">
+   <input type="number" ng-model="user.time" class="form-control" id="time" placeholder="Enter a number" required>
+          </div>
+      </div>
+      
+      <div class="form-group">
+        <label class="control-label col-md-4" for="itmaturity">Space</label>
+        <div class="col-md-6">
+   <input type="number" ng-model="user.space" class="form-control" id="space" placeholder="Enter a number" required>
+          </div>
+      </div>
+   
+      
+     </fieldset>
+     
+     <fieldset id="Resources" title="IT Resources">
+		<legend>Demand of IT Resources</legend>
+		
+		
+		
+		 <div class="form-group">
+        <label class="control-label col-md-4" for="itmaturity">Customization of IT Solutions</label>
+         <div class="col-md-6">
+   <input type="number" ng-model="user.it_solutions" class="form-control" id="it_solutions" placeholder="Enter a number" required>
+     </div>
+      </div>
+      
+      <div class="form-group">
+        <label class="control-label col-md-4" for="itcomplexity">Mobility of Users</label>
+        <div class="col-md-6">
+   <input type="number" ng-model="user.user_mobility" class="form-control" id="user_mobility" placeholder="Enter a number" required>
+          </div>
+      </div>
+      
+      <div class="form-group">
+        <label class="control-label col-md-4" for="itcompatibility">Future IT Usage Expansion</label>
+        <div class="col-md-6">
+   <input type="number" ng-model="user.it_expansion" class="form-control" id="it_expansion" placeholder="Enter a number" required>
+          </div>
+      </div>
+      
+      <div class="form-group">
+        <label class="control-label col-md-4" for="legacy_systems">Strategic Alignment</label>
+        <div class="col-md-6">
+   <input type="number" ng-model="user.alignment" class="form-control" id="alignment" placeholder="Enter a number" required>
+          </div>
+      </div>
+   
+      
+     </fieldset>
+     
+     <fieldset id="Nature" title="Organisation Nature">
+		<legend>Nature of Organisation</legend>
+		
+		
+		
+		 <div class="form-group">
+        <label class="control-label col-md-4" for="itmaturity">Scale of Business</label>
+         <div class="col-md-6">
+   <input type="number" ng-model="user.business_scale" class="form-control" id="business_scale" placeholder="Enter a number" required>
+     </div>
+      </div>
+      
+      <div class="form-group">
+        <label class="control-label col-md-4" for="itcomplexity">Development Stage</label>
+        <div class="col-md-6">
+   <input type="number" ng-model="user.development" class="form-control" id="development" placeholder="Enter a number" required>
+          </div>
+      </div>
+      
+      <div class="form-group">
+        <label class="control-label col-md-4" for="itcompatibility">IT Conservativeness</label>
+        <div class="col-md-6">
+   <input type="number" ng-model="user.it_conservativeness" class="form-control" id="it_conservativeness" placeholder="Enter a number" required>
+          </div>
+      </div>
+      
+      <div class="form-group">
+        <label class="control-label col-md-4" for="legacy_systems">IT Decisiveness</label>
+        <div class="col-md-6">
+   <input type="number" ng-model="user.it_decisveness" class="form-control" id="it_decisveness" placeholder="Enter a number" required>
+          </div>
+      </div>
+      
+      
+     </fieldset>
+    
+     
+        
+
+            <div class="form-group">
+
+           <div class="col-md-6">
+
+     <button type="button" ng-click="reset()" value="Reset"  class="btn btn-default">Reset</button>
+         <button type="button" ng-click="submit(user)" value="Submit" class="btn btn-primary" ng-disabled="form.$invalid" >Submit</button>
+  
+      </div> 
+    </div>
+    <br>
+    <br>
+<!--
+     <pre>user = {{user | json}}</pre>
+  <pre>master = {{master | json}}</pre>
+-->
+  
+
+   
+   
+   
+</div>
+   
+    </form>
+</div>
+<div class="col-xs-3">
+
+</div>
+</div>
+</div>
+
+
+    </div>
+
+</section>

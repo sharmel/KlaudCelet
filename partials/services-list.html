@@ -1,0 +1,49 @@
+<section>
+ <br>
+           <br> <br>
+           <br>
+           
+           
+           <div class="container"> 
+             
+<div class="row" ng-controller="ViewController" ng-init="find()">
+<h2 align="center">{{data.name}} </h2> 
+<br> <br>
+
+<!--   <ul ng-repeat="p in providerCtrl.providers">-->
+    
+   <div class="col-xs-9">
+   <div class="row" ng-repeat="p in data.services">
+      <div class="col-xs-6 col-md-4"> 
+            
+                <div id="provider">
+<!--                              <h1>{{p.cloud_id}}</h1>-->
+                              <p><strong>{{p.service_name}}</strong></p>
+                             
+<!--                <img ng-src="images/{{ data.image }}">-->
+<!--                {{ p.Provider_Name | uppercase }}-->
+                </div>
+             </div>   
+       <div class="col-xs-6 col-md-4">
+             <p> {{p.service_description}} </p>
+             </div>
+             
+              <div class="col-xs-6 col-md-4">
+                <p>{{ p.provider_name }}<p>
+            </div>
+            
+   </div>
+   <hr>
+   
+    
+        </div>
+        
+        <div class="col-xs-3">
+
+</div>
+        
+        </div>
+        </div>
+        
+       
+</section>

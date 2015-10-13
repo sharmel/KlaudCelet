@@ -1,0 +1,135 @@
+<section>
+<br>
+<div class="container">
+<div class="row">
+<div class="col-xs-9">
+    
+    <div class="guide" align="center">
+            <button type="button" class="btn btn-danger" ng-if="industry.SI < 3760"> &lt; | 3760 Not Suitable for Migration</button> <br>
+            <button type="button" class="btn btn-warning" ng-if="industry.SI >3760 || industry.SI < 4600"> 3760 - 4600 | Further criteria needed</button><br>
+            <button type="button" class="btn btn-success" ng-if="industry.SI > 4600"> &gt; 4600 | Suitable for Cloud Migration</button>
+
+    </div>
+    <br>
+    
+<!-- <div ng-controller="MigrateController">-->
+    <form name="form"  class="css-form" novalidate>
+     
+<!--          <pre>industry = {{industry.alignment + industry.maturity}} </pre>-->
+
+      
+       <div class="form-group">
+        <label class="control-label col-md-4" for="itmaturity">Number of Servers</label>
+         <div class="col-md-6">
+   <input type="number" ng-model="industry.servers" name="servers" class="form-control" popover-placement="top" popover-trigger="mouseenter" uib-popover="< 100 = 4, between 101-2000 =3, between 1001-10000=2, between 10001-50000=1" id="itservers" placeholder="Enter a number between 1-4" min="1" max="4" required>
+     <div ng-show="form.$submitted || form.servers.$touched">
+      <div ng-show="form.servers.$error.required">Enter a number between 1-4</div>
+      <span ng-show="form.servers.$error.min || form.servers.$error.max">
+      The value must be in range 1 to 4!</span>
+    </div>
+     </div>
+     
+    
+      </div>
+      
+      <div class="form-group">
+        <label class="control-label col-md-4" for="itcomplexity">Number of Countries Spread</label>
+        <div class="col-md-6">
+   <input type="number" ng-model="industry.countries" name="countries" class="form-control" id="itcountries" placeholder="Enter a number between 1-5" popover-placement="top"popover-trigger="mouseenter" uib-popover=">10 =1,between 6-9 =2, between 4-6 =3, between 0-4=4, 1 country=5" min="1" max="5" required>
+         <div ng-show="form.$submitted || form.countries.$touched">
+      <div ng-show="form.countries.$error.required">Enter a number between 1-5</div>
+      <span ng-show="form.countries.$error.min || form.countries.$error.max">
+      The value must be in range 1 to 5!</span>
+          </div>
+      </div>
+      
+      <div class="form-group">
+        <label class="control-label col-md-4" for="itrevenue">Annual Revenue</label>
+        <div class="col-md-6">
+   <input type="number" ng-model="industry.revenue" name="revenue"class="form-control" id="itmaturity" placeholder="Enter a number between 1-3"popover-placement="top" popover-trigger="mouseenter" uib-popover="<$100M =3,between $(100-500)M =2, Above $500M =1" min="1" max="3" required>
+         <div ng-show="form.$submitted || form.revenue.$touched">
+      <div ng-show="form.revenue.$error.required">Enter a number between 1-3</div>
+      <span ng-show="form.revenue.$error.min || form.revenue.$error.max">
+      The value must be in range 1 to 3!</span>
+          </div>
+          </div>
+      </div>
+      
+      <div class="form-group">
+        <label class="control-label col-md-4" for="services">Type of Service</label>
+        <div class="col-md-6">
+   <input type="number" ng-model="industry.service" name="service"class="form-control" id="itmaturity" placeholder="Enter a number between 1-4" popover-placement="top" popover-trigger="mouseenter" uib-popover="Others =5 Online book store, Newsrooms, Online ticketing, Stock brokerage =4 Social networking,Search engines,Gaming,Banking/Finance,Video/music sites, Pornography sites =3 Marriage sites,Software providers,Photo sharing sites,Online shopping/auction =2 Job sites,E-mail =1" min="1" max="4" required>
+         <div ng-show="form.$submitted || form.service.$touched">
+      <div ng-show="form.service.$error.required">Enter a number between 1-4</div>
+      <span ng-show="form.service.$error.min || form.service.$error.max">
+      The value must be in range 1 to 4!</span>
+          </div>
+          </div>
+      </div>
+      
+		
+		
+		 <div class="form-group">
+        <label class="control-label col-md-4" for="itmaturity">Size of Customer Base</label>
+         <div class="col-md-6">
+   <input type="number" ng-model="industry.customer" class="form-control" id="customer" placeholder="Enter a number between 1-3"popover-placement="top" popover-trigger="mouseenter" uib-popover="<$100,000 =3,between $100,000-$10M =2, > $10M =1" min="1" max="3" required>
+     </div>
+      </div>
+      
+      <div class="form-group">
+        <label class="control-label col-md-4" for="itcomplexity">Duration of Peak Time</label>
+        <div class="col-md-6">
+   <input type="number" ng-model="industry.peak" class="form-control" id="peak" placeholder="Enter a number between 1-4"popover-placement="top" popover-trigger="mouseenter" uib-popover="few hours =4,between few days=3, between 1-3 weeks=2 between 1-3 months=1" min="1" max="4" required>
+          </div>
+      </div>
+      
+      <div class="form-group">
+        <label class="control-label col-md-4" for="itrevenue">Average Peak Time</label>
+        <div class="col-md-6">
+   <input type="number" ng-model="industry.averagePeak" class="form-control" id="averagePeak" placeholder="Enter a number between 1-4"popover-placement="top" popover-trigger="mouseenter" uib-popover=">10=4,<10=3, <5x=2, <2x=1" min="1" max="4" required>
+          </div>
+      </div>
+      
+      <div class="form-group">
+        <label class="control-label col-md-4" for="services">Amount of Data Handling</label>
+        <div class="col-md-6">
+   <input type="number" ng-model="industry.data_handling" class="form-control" id="data_handling" placeholder="Enter a number between 1-5"popover-placement="top" popover-trigger="mouseenter" uib-popover=">100TB/month=1,1-100TB/month=2, 500GB-1TB/month=3, 100-500GB/month=4, <100GB=5" min="1" max="5" required>
+          </div>
+      </div>
+		
+		
+		
+		 <div class="form-group">
+        <label class="control-label col-md-4" for="itsensitivity">Data Sensitivity</label>
+         <div class="col-md-6">
+   <input type="number" ng-model="industry.sensitivity" class="form-control" id="sensitivity" placeholder="Enter a number between 1-5"popover-placement="top" popover-trigger="mouseenter" uib-popover="Extremely Sensitive=1,Very Sensitive=2, Sensitive=3, Less Sensitive=4, Not Sensitive=5" min="1" max="5" required>
+     </div>
+      </div>
+      
+      <div class="form-group">
+        <label class="control-label col-md-4" for="itcomplexity">Criticality of Work done</label>
+        <div class="col-md-6">
+   <input type="number" ng-model="industry.criticality" class="form-control" id="criticality" placeholder="Enter a number between 1-4"popover-placement="top" popover-trigger="mouseenter" uib-popover="Standard=4,Less Critical=3, Critical=2, Highly Critical=1" min="1" max="4" required>
+          </div>
+      </div>
+      
+           
+    <div class="form-group">
+
+           <div class="col-md-6">
+
+     <button type="button" ng-click="clear()" value="clear"  class="btn btn-default">Reset</button>
+         <button type="button" ng-click="submit(industry)" value="Submit" class="btn btn-primary" ng-disabled="form.$invalid">Submit</button>
+  
+      </div> 
+    </div>
+   
+        </form>
+<!-- </div>-->
+
+</div>
+</div>
+</div>
+
+
+</section>

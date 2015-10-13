@@ -1,0 +1,645 @@
+function AppCtrl($scope){
+    
+    
+    
+    <div class="search">
+               
+               <h1> Providers Directory</h1>
+               <label>Enter Your Industry:</label>
+               <input ng-model="industry" ng-model="cost" type="text" autofocus>
+           </div>
+            <br>
+           <br>
+            <!-- data binding-->
+                    <!-- ng-repeat is used to repeat html data in the data binding process-->
+<div class="row" ng-repeat="p in providerCtrl.providers | filter:industry | filter:cost">
+<!--   <ul ng-repeat="p in providerCtrl.providers">-->
+    <div class="col-md-4">   
+            
+<!--            <li>-->
+                <div id="provider">
+                <img ng-src="images/{{ p.image }}">
+<!--                {{ p.Provider_Name | uppercase }}-->
+                </div>
+<!--
+            <ul>
+            <li ng-repeat="s in p.states ">{{ s.name }}</li>
+                </ul>
+-->
+<!--            </li>-->
+             </div>
+             <div class="col-md-4" > 
+             <p>{{ p.description }} </p>
+             </div>
+           
+               <div class="col-md-4" >
+                <p>{{ p.deploy_model }}<p>
+            </div>
+        <hr>
+<!--</ul>-->
+    
+        </div>
+    
+    
+   //$scope.providers =  [
+//    {
+//      "Provider_Name": "Google Cloud Platform",
+//      "Description": "Google Cloud Platform is a set of modular cloud-based services that allow you to create anything from simple websites to complex applications.",
+//      "Deployment_Model": "Public cloud",
+//      "Service_Model": "PaaS",
+//      "Provider_Image": "download.png",
+//      "Server_Location": "North America",
+//      "Subscription_Method": "Pay Per Use",
+//      "Criteria": "Low cost",
+//      "Suitability": "1",
+//      "Industry": "Energy & Environment",
+//      "Cloud_id": "1"
+//    },
+//    {
+//      "Provider_Name": "Google Cloud Platform",
+//      "Description": "Google Cloud Platform is a set of modular cloud-based services that allow you to create anything from simple websites to complex applications.",
+//      "Deployment_Model": "Private cloud",
+//      "Service_Model": "PaaS",
+//      "Provider_Image": "download.png",
+//      "Server_Location": "North America",
+//      "Subscription_Method": "Pay Per Use",
+//      "Criteria": "Robust integration",
+//      "Suitability": "1",
+//      "Industry": "Energy & Environment",
+//      "Cloud_id": "2"
+//    },
+//    {
+//      "Provider_Name": "Google Cloud Platform",
+//      "Description": "Google Cloud Platform is a set of modular cloud-based services that allow you to create anything from simple websites to complex applications.",
+//      "Deployment_Model": "Private cloud",
+//      "Service_Model": "IaaS",
+//      "Provider_Image": "download.png",
+//      "Server_Location": "North America",
+//      "Subscription_Method": "Pay Per Use",
+//      "Criteria": "Secure",
+//      "Suitability": "1",
+//      "Industry": "Energy & Environment",
+//      "Cloud_id": "3"
+//    },
+//    {
+//      "Provider_Name": "Google Cloud Platform",
+//      "Description": "Google Cloud Platform is a set of modular cloud-based services that allow you to create anything from simple websites to complex applications.",
+//      "Deployment_Model": "Private cloud",
+//      "Service_Model": "SaaS",
+//      "Provider_Image": "download.png",
+//      "Server_Location": "North America",
+//      "Subscription_Method": "Pay Per Use",
+//      "Criteria": "SLA",
+//      "Suitability": "1",
+//      "Industry": "Healthcare & Pharmaceuticals",
+//      "Cloud_id": "4"
+//    },
+//    {
+//      "Provider_Name": "Google Cloud Platform",
+//      "Description": "Google Cloud Platform is a set of modular cloud-based services that allow you to create anything from simple websites to complex applications.",
+//      "Deployment_Model": "Private cloud",
+//      "Service_Model": "PaaS",
+//      "Provider_Image": "download.png",
+//      "Server_Location": "Europe",
+//      "Subscription_Method": "Pay Per Use",
+//      "Criteria": "Robust integration",
+//      "Suitability": "1",
+//      "Industry": "Manufacturing & Engineering",
+//      "Cloud_id": "5"
+//    },
+//    {
+//      "Provider_Name": "Google Cloud Platform",
+//      "Description": "Google Cloud Platform is a set of modular cloud-based services that allow you to create anything from simple websites to complex applications.",
+//      "Deployment_Model": "Private cloud",
+//      "Service_Model": "PaaS",
+//      "Provider_Image": "download.png",
+//      "Server_Location": "Asia",
+//      "Subscription_Method": "Pay Per Use",
+//      "Criteria": "Products",
+//      "Suitability": "0",
+//      "Industry": "Energy & Environment",
+//      "Cloud_id": "6"
+//    },
+//    {
+//      "Provider_Name": "Google Cloud Platform",
+//      "Description": "Google Cloud Platform is a set of modular cloud-based services that allow you to create anything from simple websites to complex applications.",
+//      "Deployment_Model": "Public cloud",
+//      "Service_Model": "PaaS",
+//      "Provider_Image": "download.png",
+//      "Server_Location": "North America",
+//      "Subscription_Method": "Fixed Rate",
+//      "Criteria": "Multitenancy",
+//      "Suitability": "1",
+//      "Industry": "Media & Entertainment",
+//      "Cloud_id": "7"
+//    },
+//    {
+//      "Provider_Name": "Google Cloud Platform",
+//      "Description": "Google Cloud Platform is a set of modular cloud-based services that allow you to create anything from simple websites to complex applications.",
+//      "Deployment_Model": "Public cloud",
+//      "Service_Model": "PaaS",
+//      "Provider_Image": "download.png",
+//      "Server_Location": "Europe",
+//      "Subscription_Method": "Pay Per Use",
+//      "Criteria": "SLP",
+//      "Suitability": "1",
+//      "Industry": "Transportation & Logistics",
+//      "Cloud_id": "8"
+//    },
+//    {
+//      "Provider_Name": "Google Cloud Platform",
+//      "Description": "Google Cloud Platform is a set of modular cloud-based services that allow you to create anything from simple websites to complex applications.",
+//      "Deployment_Model": "Public cloud",
+//      "Service_Model": "PaaS",
+//      "Provider_Image": "download.png",
+//      "Server_Location": "Europe",
+//      "Subscription_Method": "Pay Per Use",
+//      "Criteria": "DRP",
+//      "Suitability": "1",
+//      "Industry": "Human Resources",
+//      "Cloud_id": "9"
+//    },
+//    {
+//      "Provider_Name": "Google Cloud Platform",
+//      "Description": "Google Cloud Platform is a set of modular cloud-based services that allow you to create anything from simple websites to complex applications.",
+//      "Deployment_Model": "Public cloud",
+//      "Service_Model": "PaaS",
+//      "Provider_Image": "download.png",
+//      "Server_Location": "Europe",
+//      "Subscription_Method": "Pay Per Use",
+//      "Criteria": "Customers",
+//      "Suitability": "1",
+//      "Industry": "Customer Relationship Management",
+//      "Cloud_id": "10"
+//    },
+//    {
+//      "Provider_Name": "Google Cloud Platform",
+//      "Description": "Google Cloud Platform is a set of modular cloud-based services that allow you to create anything from simple websites to complex applications.",
+//      "Deployment_Model": "Public cloud",
+//      "Service_Model": "PaaS",
+//      "Provider_Image": "download.png",
+//      "Server_Location": "Europe",
+//      "Subscription_Method": "Pay Per Use",
+//      "Criteria": "Trial",
+//      "Suitability": "1",
+//      "Industry": "Legal",
+//      "Cloud_id": "11"
+//    },
+//    {
+//      "Provider_Name": "Google Cloud Platform",
+//      "Description": "Google Cloud Platform is a set of modular cloud-based services that allow you to create anything from simple websites to complex applications.",
+//      "Deployment_Model": "Public cloud",
+//      "Service_Model": "PaaS",
+//      "Provider_Image": "download.png",
+//      "Server_Location": "Europe",
+//      "Subscription_Method": "Pay Per Use",
+//      "Criteria": "Transparency",
+//      "Suitability": "1",
+//      "Industry": "Collaboration",
+//      "Cloud_id": "12"
+//    },
+//    {
+//      "Provider_Name": "Google Cloud Platform",
+//      "Description": "Google Cloud Platform is a set of modular cloud-based services that allow you to create anything from simple websites to complex applications.",
+//      "Deployment_Model": "Public cloud",
+//      "Service_Model": "PaaS",
+//      "Provider_Image": "download.png",
+//      "Server_Location": "Europe",
+//      "Subscription_Method": "Pay Per Use",
+//      "Criteria": "NIST Security",
+//      "Suitability": "1",
+//      "Industry": "Cloud Management",
+//      "Cloud_id": "13"
+//    },
+//    {
+//      "Provider_Name": "Google Cloud Platform",
+//      "Description": "Google Cloud Platform is a set of modular cloud-based services that allow you to create anything from simple websites to complex applications.",
+//      "Deployment_Model": "Public cloud",
+//      "Service_Model": "PaaS",
+//      "Provider_Image": "download.png",
+//      "Server_Location": "Europe",
+//      "Subscription_Method": "Pay Per Use",
+//      "Criteria": "Configurable",
+//      "Suitability": "1",
+//      "Industry": "Data Analytics",
+//      "Cloud_id": "14"
+//    },
+//    {
+//      "Provider_Name": "Amazon Web Services",
+//      "Description": "AWS began offering its technology infrastructure platform in 2006. Since then",
+//      "Deployment_Model": "with hundreds of thousands of customers across 190 countries using AWS in every imaginable way",
+//      "Service_Model": "we have developed considerable experience operating at scale.",
+//      "Provider_Image": "Public cloud",
+//      "Server_Location": "PaaS",
+//      "Subscription_Method": "NULL",
+//      "Criteria": "USA East North Virginia",
+//      "Suitability": "Pay Per Use",
+//      "Industry": "Low cost",
+//      "Cloud_id": "1"
+//    },
+//    {
+//      "Provider_Name": "Amazon Web Services",
+//      "Description": "AWS began offering its technology infrastructure platform in 2006. Since then",
+//      "Deployment_Model": "with hundreds of thousands of customers across 190 countries using AWS in every imaginable way",
+//      "Service_Model": "we have developed considerable experience operating at scale.",
+//      "Provider_Image": "Private cloud",
+//      "Server_Location": "PaaS",
+//      "Subscription_Method": "NULL",
+//      "Criteria": "USA West Oregon",
+//      "Suitability": "Pay Per Use",
+//      "Industry": "Robust integration",
+//      "Cloud_id": "0"
+//    },
+//    {
+//      "Provider_Name": "Amazon Web Services",
+//      "Description": "AWS began offering its technology infrastructure platform in 2006. Since then",
+//      "Deployment_Model": "with hundreds of thousands of customers across 190 countries using AWS in every imaginable way",
+//      "Service_Model": "we have developed considerable experience operating at scale.",
+//      "Provider_Image": "Private cloud",
+//      "Server_Location": "IaaS",
+//      "Subscription_Method": "NULL",
+//      "Criteria": "USA West California",
+//      "Suitability": "Pay Per Use",
+//      "Industry": "Secure",
+//      "Cloud_id": "1"
+//    },
+//    {
+//      "Provider_Name": "Amazon Web Services",
+//      "Description": "AWS began offering its technology infrastructure platform in 2006. Since then",
+//      "Deployment_Model": "with hundreds of thousands of customers across 190 countries using AWS in every imaginable way",
+//      "Service_Model": "we have developed considerable experience operating at scale.",
+//      "Provider_Image": "Private cloud",
+//      "Server_Location": "SaaS",
+//      "Subscription_Method": "NULL",
+//      "Criteria": "Singapore",
+//      "Suitability": "Pay Per Use",
+//      "Industry": "SLA",
+//      "Cloud_id": "1"
+//    },
+//    {
+//      "Provider_Name": "Amazon Web Services",
+//      "Description": "AWS began offering its technology infrastructure platform in 2006. Since then",
+//      "Deployment_Model": "with hundreds of thousands of customers across 190 countries using AWS in every imaginable way",
+//      "Service_Model": "we have developed considerable experience operating at scale.",
+//      "Provider_Image": "Private cloud",
+//      "Server_Location": "PaaS",
+//      "Subscription_Method": "NULL",
+//      "Criteria": "Europe",
+//      "Suitability": "Fixed Rate",
+//      "Industry": "Robust integration",
+//      "Cloud_id": "1"
+//    },
+//    {
+//      "Provider_Name": "Amazon Web Services",
+//      "Description": "AWS began offering its technology infrastructure platform in 2006. Since then",
+//      "Deployment_Model": "with hundreds of thousands of customers across 190 countries using AWS in every imaginable way",
+//      "Service_Model": "we have developed considerable experience operating at scale.",
+//      "Provider_Image": "Private cloud",
+//      "Server_Location": "IaaS",
+//      "Subscription_Method": "NULL",
+//      "Criteria": "Tokyo",
+//      "Suitability": "Pay Per Use",
+//      "Industry": "Products",
+//      "Cloud_id": "0"
+//    },
+//    {
+//      "Provider_Name": "Amazon Web Services",
+//      "Description": "AWS began offering its technology infrastructure platform in 2006. Since then",
+//      "Deployment_Model": "with hundreds of thousands of customers across 190 countries using AWS in every imaginable way",
+//      "Service_Model": "we have developed considerable experience operating at scale.",
+//      "Provider_Image": "Public cloud",
+//      "Server_Location": "SaaS",
+//      "Subscription_Method": "NULL",
+//      "Criteria": "South America",
+//      "Suitability": "Fixed Rate",
+//      "Industry": "Multitenancy",
+//      "Cloud_id": "1"
+//    },
+//    {
+//      "Provider_Name": "Amazon Web Services",
+//      "Description": "AWS began offering its technology infrastructure platform in 2006. Since then",
+//      "Deployment_Model": "with hundreds of thousands of customers across 190 countries using AWS in every imaginable way",
+//      "Service_Model": "we have developed considerable experience operating at scale.",
+//      "Provider_Image": "Public cloud",
+//      "Server_Location": "IaaS",
+//      "Subscription_Method": "NULL",
+//      "Criteria": "Sydney",
+//      "Suitability": "Pay Per Use",
+//      "Industry": "SLP",
+//      "Cloud_id": "1"
+//    },
+//    {
+//      "Provider_Name": "Amazon Web Services",
+//      "Description": "AWS began offering its technology infrastructure platform in 2006. Since then",
+//      "Deployment_Model": "with hundreds of thousands of customers across 190 countries using AWS in every imaginable way",
+//      "Service_Model": "we have developed considerable experience operating at scale.",
+//      "Provider_Image": "Public cloud",
+//      "Server_Location": "SaaS",
+//      "Subscription_Method": "NULL",
+//      "Criteria": "USA West California",
+//      "Suitability": "Pay Per Use",
+//      "Industry": "DRP",
+//      "Cloud_id": "1"
+//    },
+//    {
+//      "Provider_Name": "Amazon Web Services",
+//      "Description": "AWS began offering its technology infrastructure platform in 2006. Since then",
+//      "Deployment_Model": "with hundreds of thousands of customers across 190 countries using AWS in every imaginable way",
+//      "Service_Model": "we have developed considerable experience operating at scale.",
+//      "Provider_Image": "Public cloud",
+//      "Server_Location": "PaaS",
+//      "Subscription_Method": "NULL",
+//      "Criteria": "South America",
+//      "Suitability": "Pay Per Use",
+//      "Industry": "Customers",
+//      "Cloud_id": "1"
+//    },
+//    {
+//      "Provider_Name": "Amazon Web Services",
+//      "Description": "AWS began offering its technology infrastructure platform in 2006. Since then",
+//      "Deployment_Model": "with hundreds of thousands of customers across 190 countries using AWS in every imaginable way",
+//      "Service_Model": "we have developed considerable experience operating at scale.",
+//      "Provider_Image": "Public cloud",
+//      "Server_Location": "PaaS",
+//      "Subscription_Method": "NULL",
+//      "Criteria": "Europe",
+//      "Suitability": "Pay Per Use",
+//      "Industry": "Trial",
+//      "Cloud_id": "1"
+//    },
+//    {
+//      "Provider_Name": "Amazon Web Services",
+//      "Description": "AWS began offering its technology infrastructure platform in 2006. Since then",
+//      "Deployment_Model": "with hundreds of thousands of customers across 190 countries using AWS in every imaginable way",
+//      "Service_Model": "we have developed considerable experience operating at scale.",
+//      "Provider_Image": "Public cloud",
+//      "Server_Location": "PaaS",
+//      "Subscription_Method": "NULL",
+//      "Criteria": "USA East North Virginia",
+//      "Suitability": "Pay Per Use",
+//      "Industry": "Transparency",
+//      "Cloud_id": "1"
+//    },
+//    {
+//      "Provider_Name": "Amazon Web Services",
+//      "Description": "AWS began offering its technology infrastructure platform in 2006. Since then",
+//      "Deployment_Model": "with hundreds of thousands of customers across 190 countries using AWS in every imaginable way",
+//      "Service_Model": "we have developed considerable experience operating at scale.",
+//      "Provider_Image": "Public cloud",
+//      "Server_Location": "IaaS",
+//      "Subscription_Method": "NULL",
+//      "Criteria": "Singapore",
+//      "Suitability": "Pay Per Use",
+//      "Industry": "NIST Security",
+//      "Cloud_id": "1"
+//    },
+//    {
+//      "Provider_Name": "Amazon Web Services",
+//      "Description": "AWS began offering its technology infrastructure platform in 2006. Since then",
+//      "Deployment_Model": "with hundreds of thousands of customers across 190 countries using AWS in every imaginable way",
+//      "Service_Model": "we have developed considerable experience operating at scale.",
+//      "Provider_Image": "Public cloud",
+//      "Server_Location": "SaaS",
+//      "Subscription_Method": "NULL",
+//      "Criteria": "Tokyo",
+//      "Suitability": "Pay Per Use",
+//      "Industry": "Configurable",
+//      "Cloud_id": "1"
+//    },
+//    {
+//      "Provider_Name": "Amazon Web Services",
+//      "Description": "AWS began offering its technology infrastructure platform in 2006. Since then",
+//      "Deployment_Model": "with hundreds of thousands of customers across 190 countries using AWS in every imaginable way",
+//      "Service_Model": "we have developed considerable experience operating at scale.",
+//      "Provider_Image": "Public cloud",
+//      "Server_Location": "IaaS",
+//      "Subscription_Method": "NULL",
+//      "Criteria": "Tokyo",
+//      "Suitability": "Pay Per Use",
+//      "Industry": "Indexing",
+//      "Cloud_id": "0"
+//    },
+//    {
+//      "Provider_Name": "Amazon Web Services",
+//      "Description": "AWS began offering its technology infrastructure platform in 2006. Since then",
+//      "Deployment_Model": "with hundreds of thousands of customers across 190 countries using AWS in every imaginable way",
+//      "Service_Model": "we have developed considerable experience operating at scale.",
+//      "Provider_Image": "Public cloud",
+//      "Server_Location": "IaaS",
+//      "Subscription_Method": "NULL",
+//      "Criteria": "USA West California",
+//      "Suitability": "Pay Per Use",
+//      "Industry": "Other Services",
+//      "Cloud_id": "0"
+//    },
+//    {
+//      "Provider_Name": "Google Cloud Platform",
+//      "Description": "Google Cloud Platform is a set of modular cloud-based services that allow you to create anything from simple websites to complex applications.",
+//      "Deployment_Model": "Public cloud",
+//      "Service_Model": "IaaS",
+//      "Provider_Image": "NULL",
+//      "Server_Location": "Europe",
+//      "Subscription_Method": "Pay Per Use",
+//      "Criteria": "Other Services",
+//      "Suitability": "1",
+//      "Industry": "Energy & Environment",
+//      "Cloud_id": "31"
+//    },
+//    {
+//      "Provider_Name": "Google Cloud Platform",
+//      "Description": "Google Cloud Platform is a set of modular cloud-based services that allow you to create anything from simple websites to complex applications.",
+//      "Deployment_Model": "Public cloud",
+//      "Service_Model": "IaaS",
+//      "Provider_Image": "NULL",
+//      "Server_Location": "Asia",
+//      "Subscription_Method": "Pay Per Use",
+//      "Criteria": "Indexing",
+//      "Suitability": "1",
+//      "Industry": "Energy & Environment",
+//      "Cloud_id": "32"
+//    },
+//    {
+//      "Provider_Name": "Amazon Web Services",
+//      "Description": "AWS began offering its technology infrastructure platform in 2006. Since then",
+//      "Deployment_Model": "with hundreds of thousands of customers across 190 countries using AWS in every imaginable way",
+//      "Service_Model": "we have developed considerable experience operating at scale.",
+//      "Provider_Image": "Hybrid cloud",
+//      "Server_Location": "PaaS",
+//      "Subscription_Method": "NULL",
+//      "Criteria": "North America",
+//      "Suitability": "Pay Per Use",
+//      "Industry": "Low cost",
+//      "Cloud_id": "1"
+//    },
+//    {
+//      "Provider_Name": "CloudSigma",
+//      "Description": "CloudSigma\"s virtualization is based on KVM and includes full CPU instruction set",
+//      "Deployment_Model": "flexible CPU provisioning",
+//      "Service_Model": "NUMA topology exposure and QEMU VIRTIO (para-visualization).",
+//      "Provider_Image": "Hybrid cloud",
+//      "Server_Location": "IaaS",
+//      "Subscription_Method": "NULL",
+//      "Criteria": "North America",
+//      "Suitability": "Pay Per Use",
+//      "Industry": "Low cost",
+//      "Cloud_id": "1"
+//    },
+//    {
+//      "Provider_Name": "CloudSigma",
+//      "Description": "CloudSigma\"s virtualization is based on KVM and includes full CPU instruction set",
+//      "Deployment_Model": "flexible CPU provisioning",
+//      "Service_Model": "NUMA topology exposure and QEMU VIRTIO (para-visualization).",
+//      "Provider_Image": "Private cloud",
+//      "Server_Location": "IaaS",
+//      "Subscription_Method": "NULL",
+//      "Criteria": "Europe",
+//      "Suitability": "Pay Per Use",
+//      "Industry": "Robust integration",
+//      "Cloud_id": "0"
+//    },
+//    {
+//      "Provider_Name": "CloudSigma",
+//      "Description": "CloudSigma\"s virtualization is based on KVM and includes full CPU instruction set",
+//      "Deployment_Model": "flexible CPU provisioning",
+//      "Service_Model": "NUMA topology exposure and QEMU VIRTIO (para-visualization).",
+//      "Provider_Image": "Public cloud",
+//      "Server_Location": "IaaS",
+//      "Subscription_Method": "NULL",
+//      "Criteria": "North America",
+//      "Suitability": "Fixed Rate",
+//      "Industry": "Secure",
+//      "Cloud_id": "1"
+//    },
+//    {
+//      "Provider_Name": "EngineYard",
+//      "Description": "Engine Yard is the leading cloud application management platform empowering developers and DevOps to provision",
+//      "Deployment_Model": "manage",
+//      "Service_Model": "monitor and control applications in the public and private cloud.",
+//      "Provider_Image": "Public cloud",
+//      "Server_Location": "PaaS",
+//      "Subscription_Method": "NULL",
+//      "Criteria": "North America",
+//      "Suitability": "Fixed Rate",
+//      "Industry": "SLA",
+//      "Cloud_id": "0"
+//    },
+//    {
+//      "Provider_Name": "Windows Azure",
+//      "Description": "With Windows Azure",
+//      "Deployment_Model": "you can spin up new Windows Server and Linux virtual machines in minutes and adjust your usage as your needs change.",
+//      "Service_Model": "Private cloud",
+//      "Provider_Image": "PaaS",
+//      "Server_Location": "NULL",
+//      "Subscription_Method": "Europe",
+//      "Criteria": "Pay Per Use",
+//      "Suitability": "Products",
+//      "Industry": "0",
+//      "Cloud_id": "Information and Communication Technology"
+//    },
+//    {
+//      "Provider_Name": "WorkXpress",
+//      "Description": "WorkXpress is a robust platform as a service (PaaS) offering you the ability to build your own complex database apps 100% visually.",
+//      "Deployment_Model": "Hybrid cloud",
+//      "Service_Model": "PaaS",
+//      "Provider_Image": "NULL",
+//      "Server_Location": "North America",
+//      "Subscription_Method": "Pay Per Use and Fixed Rate",
+//      "Criteria": "Cloud storage",
+//      "Suitability": "1",
+//      "Industry": "Energy & Environment",
+//      "Cloud_id": "39"
+//    },
+//    {
+//      "Provider_Name": "Lunacloud",
+//      "Description": "Lunacloud is a provider that not only delivers real cloud services that meet all the essential characteristics of Cloud Computing but strives to exceed your expectations by being technologically advanced and design mindfully.",
+//      "Deployment_Model": "Hybrid cloud",
+//      "Service_Model": "PaaS",
+//      "Provider_Image": "NULL",
+//      "Server_Location": "Europe",
+//      "Subscription_Method": "Fixed Rate",
+//      "Criteria": "Hourly Rate",
+//      "Suitability": "1",
+//      "Industry": "Media & Entertainment",
+//      "Cloud_id": "40"
+//    },
+//    {
+//      "Provider_Name": "Rackspace",
+//      "Description": "Whether you’re building a corporate website or a demanding application",
+//      "Deployment_Model": "our public cloud can power your most critical workloads.",
+//      "Service_Model": "Hybrid cloud",
+//      "Provider_Image": "IaaS",
+//      "Server_Location": "NULL",
+//      "Subscription_Method": "North America",
+//      "Criteria": "Pay Per Use and Fixed Rate",
+//      "Suitability": "Managed cloud",
+//      "Industry": "1",
+//      "Cloud_id": "Transportation & Logistics"
+//    },
+//    {
+//      "Provider_Name": "FireHost",
+//      "Description": "FireHost provides secure cloud hosting without sacrificing the redundancy and speed you would expect from an enterprise managed cloud hosting provider.",
+//      "Deployment_Model": "Private cloud",
+//      "Service_Model": "IaaS",
+//      "Provider_Image": "NULL",
+//      "Server_Location": "Europe",
+//      "Subscription_Method": "Fixed Rate",
+//      "Criteria": "DRP",
+//      "Suitability": "1",
+//      "Industry": "Retail & Customer Services",
+//      "Cloud_id": "42"
+//    },
+//    {
+//      "Provider_Name": "Skyvia",
+//      "Description": "Skyvia is a cloud service for data integration and backup.",
+//      "Deployment_Model": "Private cloud",
+//      "Service_Model": "PaaS",
+//      "Provider_Image": "NULL",
+//      "Server_Location": "North America",
+//      "Subscription_Method": "Fixed Rate",
+//      "Criteria": "Cloud storage",
+//      "Suitability": "1",
+//      "Industry": "Customer Relationship Management",
+//      "Cloud_id": "43"
+//    },
+//    {
+//      "Provider_Name": "Qt Cloud Services",
+//      "Description": "Qt Cloud Services provides you with all the tools you need for connected application development.",
+//      "Deployment_Model": "Hybrid cloud",
+//      "Service_Model": "PaaS",
+//      "Provider_Image": "NULL",
+//      "Server_Location": "Europe",
+//      "Subscription_Method": "Fixed Rate",
+//      "Criteria": "Trial",
+//      "Suitability": "0",
+//      "Industry": "Information Technology",
+//      "Cloud_id": "44"
+//    },
+//    {
+//      "Provider_Name": "TheCompuLab",
+//      "Description": "TheCompuLab is an extension of your IT department.",
+//      "Deployment_Model": "Private cloud",
+//      "Service_Model": "IaaS",
+//      "Provider_Image": "NULL",
+//      "Server_Location": "Europe",
+//      "Subscription_Method": "Fixed Rate",
+//      "Criteria": "Trial",
+//      "Suitability": "1",
+//      "Industry": "Legal",
+//      "Cloud_id": "45"
+//    },
+//   {
+//      "Provider_Name": "iWeb",
+//      "Description": "The iWeb Cloud is a public cloud powered by OpenStack,evolving open source cloud computing software advanced by over 12,000 developers worldwide.",
+//      "Deployment_Model": "Hybrid cloud",
+//      "Service_Model": "IaaS",
+//      "Provider_Image": "NULL",
+//      "Server_Location": "North America",
+//      "Subscription_Method": "Fixed Rate",
+//      "Criteria": "Backup",
+//      "Suitability": "1",
+//      "Industry": "Internet & Communications",
+//      "Cloud_id": "46"
+//    }
+//  ];
+}
+}

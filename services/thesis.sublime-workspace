@@ -1,0 +1,608 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"acc",
+				"accountType"
+			],
+			[
+				"ac",
+				"accountType"
+			],
+			[
+				"colo",
+				"color"
+			],
+			[
+				"col",
+				"colorselector"
+			],
+			[
+				"_",
+				"_blank"
+			],
+			[
+				"ta",
+				"targetor"
+			],
+			[
+				"Po",
+				"pohjonenproductions"
+			],
+			[
+				"s",
+				"script	Tag"
+			],
+			[
+				"bl",
+				"_blank"
+			],
+			[
+				"user",
+				"user_id"
+			],
+			[
+				"compan",
+				"company_logo"
+			],
+			[
+				"compa",
+				"company_logo"
+			],
+			[
+				"com",
+				"company_name"
+			],
+			[
+				"for",
+				"foreach	foreach …"
+			],
+			[
+				"mess",
+				"message_id"
+			],
+			[
+				"pa",
+				"padding-left"
+			],
+			[
+				"pos",
+				"post_id"
+			],
+			[
+				"date",
+				"date()"
+			],
+			[
+				"p",
+				"photo"
+			],
+			[
+				"text",
+				"textarea"
+			],
+			[
+				"use",
+				"users"
+			],
+			[
+				"con",
+				"Content"
+			],
+			[
+				"us",
+				"username"
+			],
+			[
+				"emplo",
+				"employerLogin"
+			],
+			[
+				"act",
+				"active"
+			],
+			[
+				"se",
+				"section	Tag"
+			],
+			[
+				"sin",
+				"signUp"
+			],
+			[
+				"about",
+				"about-us"
+			],
+			[
+				"cont",
+				"contact"
+			],
+			[
+				"ec",
+				"echo"
+			],
+			[
+				"mes",
+				"message_id"
+			],
+			[
+				"new",
+				"new_message"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 367.0,
+		"last_filter": "Package Control: ",
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: List Packages"
+			],
+			[
+				"pa",
+				"Package Control: Install Package"
+			],
+			[
+				"re",
+				"Package Control: Remove Repository"
+			],
+			[
+				"xde",
+				"Xdebug: Add/Remove Breakpoint"
+			],
+			[
+				"p",
+				"Package Control: Install Package"
+			],
+			[
+				"xdebug",
+				"Xdebug: Clear All Breakpoints"
+			],
+			[
+				"pac",
+				"Package Control: Install Package"
+			],
+			[
+				"paka",
+				"Package Control: Install Package"
+			],
+			[
+				"wak",
+				"WakaTime: Open Dashboard"
+			],
+			[
+				"",
+				"Package Control: Install Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"view",
+				"View In Browser"
+			],
+			[
+				"task",
+				"Tasks: New document"
+			],
+			[
+				"git",
+				"Git: Init"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"rem",
+				"Package Control: Remove Package"
+			],
+			[
+				"brows",
+				"File: Open In Browser - Testing Server"
+			],
+			[
+				"emm",
+				"Set Syntax: Emmet"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 593.0
+	},
+	"console":
+	{
+		"height": 125.0,
+		"history":
+		[
+			"full",
+			"*full*"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Applications/MAMP/htdocs/Thesis_Project/services"
+	],
+	"file_history":
+	[
+		"/Applications/MAMP/htdocs/Thesis_Project/about.php",
+		"/Applications/MAMP/htdocs/Thesis_Project/services/getProvider.php",
+		"/Applications/MAMP/htdocs/Thesis_Project/Thesis.sublime-project",
+		"/Applications/MAMP/htdocs/AI_251014/about-us.php",
+		"/Users/Adedoyin/Downloads/Thesis/Pluralsight - Building a Site with AngularJS and PHP/Exercise Files/Exercise Files/4-angularjs-php-building-site-m4-exercise-files/After/4 - Updated Backend/angularjs-php/classes/DBHelper.php",
+		"/Users/Adedoyin/Downloads/Thesis/Pluralsight - Building a Site with AngularJS and PHP/Exercise Files/Exercise Files/4-angularjs-php-building-site-m4-exercise-files/After/4 - Updated Backend/angularjs-php/classes/CountryRepository.php",
+		"/Applications/MAMP/htdocs/Thesis_Project/errors/errors.log",
+		"/Applications/MAMP/htdocs/Thesis_Project/ini-setting.php",
+		"/Applications/MAMP/htdocs/Thesis_Project/classes/providerRepository.php",
+		"/Applications/MAMP/htdocs/Thesis_Project/classes/DBHelper.php",
+		"/Users/Adedoyin/Downloads/Thesis/Pluralsight - Building a Site with AngularJS and PHP/Exercise Files/Exercise Files/4-angularjs-php-building-site-m4-exercise-files/After/4 - Updated Backend/angularjs-php/app.js",
+		"/Users/Adedoyin/Downloads/Thesis/Lynda. Up and Running with AngularJS/Ex_Files_UaR_AngularJS/Exercise Files/chap_04/04/start/public/js/app.js",
+		"/Users/Adedoyin/Downloads/Thesis/Pluralsight - Building a Site with AngularJS and PHP/Exercise Files/Exercise Files/4-angularjs-php-building-site-m4-exercise-files/After/4 - Updated Backend/angularjs-php/classes/DBClass.php",
+		"/Applications/MAMP/htdocs/Thesis_Project/services/getProviders.php",
+		"/Users/Adedoyin/Downloads/Thesis/Lynda. Up and Running with AngularJS/Ex_Files_UaR_AngularJS/Exercise Files/server/index.js",
+		"/Applications/MAMP/htdocs/AI_251014/team.php",
+		"/Applications/MAMP/htdocs/AI_251014/index.php",
+		"/Applications/MAMP/htdocs/AI_251014/team_homeUser.php",
+		"/Applications/MAMP/htdocs/AI_251014/team_employer.php",
+		"/Applications/MAMP/htdocs/AI_251014/login.php",
+		"/Applications/MAMP/htdocs/AI_251014/employerLogin.php",
+		"/Applications/MAMP/htdocs/AI_251014/signUp.php",
+		"/Applications/MAMP/htdocs/AI_251014/employerSignUp.php",
+		"/Applications/MAMP/htdocs/AI_251014/contact.php",
+		"/Applications/MAMP/htdocs/AI_251014/job_posting.php",
+		"/Applications/MAMP/htdocs/AI_251014/main/classes/user.php",
+		"/Applications/MAMP/htdocs/AI_251014/js/app/app-unmin.js",
+		"/Applications/MAMP/htdocs/AI_251014/index_1.php",
+		"/Applications/MAMP/htdocs/AI_251014/css/app/new-unmin.css",
+		"/Applications/MAMP/htdocs/AI_251014/index1.php",
+		"/Applications/MAMP/htdocs/AI_251014/js/app/app-min.js",
+		"/Applications/MAMP/htdocs/AI_251014/js/script.js",
+		"/Users/Adedoyin/Downloads/Thesis/Pluralsight - Building a Site with AngularJS and PHP/Exercise Files/Exercise Files/4-angularjs-php-building-site-m4-exercise-files/After/4 - Updated Backend/angularjs-php/services/getStates.php",
+		"/Applications/MAMP/htdocs/AI_251014/main/init.php",
+		"/Applications/MAMP/htdocs/AI_251014/contact_employer.php",
+		"/Applications/MAMP/htdocs/AI_251014/contact_user.php",
+		"/Applications/MAMP/htdocs/Thesis_Project/classes/DBClass.php",
+		"/Users/Adedoyin/Downloads/Thesis/Pluralsight - Building a Site with AngularJS and PHP/Exercise Files/Exercise Files/4-angularjs-php-building-site-m4-exercise-files/After/4 - Updated Backend/angularjs-php/services/addState.php",
+		"/Users/Adedoyin/Downloads/Thesis/Pluralsight - Building a Site with AngularJS and PHP/Exercise Files/Exercise Files/4-angularjs-php-building-site-m4-exercise-files/After/4 - Updated Backend/angularjs-php/services/getCountries.php",
+		"/Users/Adedoyin/Downloads/Thesis/Pluralsight - Building a Site with AngularJS and PHP/Exercise Files/Exercise Files/4-angularjs-php-building-site-m4-exercise-files/After/4 - Updated Backend/angularjs-php/classes/Country.php",
+		"/Users/Adedoyin/Downloads/Thesis/Pluralsight - Building a Site with AngularJS and PHP/Exercise Files/Exercise Files/4-angularjs-php-building-site-m4-exercise-files/After/4 - Updated Backend/angularjs-php/classes/State.php",
+		"/Applications/MAMP/htdocs/AI_251014/main/connection/db_connection.php",
+		"/Users/Adedoyin/Downloads/Thesis/Lynda. Up and Running with AngularJS/Ex_Files_UaR_AngularJS/Exercise Files/chap_03/02/final/public/partials/airport.html",
+		"/Users/Adedoyin/Downloads/Thesis/Lynda. Up and Running with AngularJS/Ex_Files_UaR_AngularJS/Exercise Files/chap_03/02/final/public/partials/destinations.html",
+		"/Users/Adedoyin/Downloads/Thesis/Lynda. Up and Running with AngularJS/Ex_Files_UaR_AngularJS/Exercise Files/chap_03/02/final/public/index.html",
+		"/Users/Adedoyin/Downloads/Thesis/Pluralsight - Building a Site with AngularJS and PHP/Exercise Files/Exercise Files/4-angularjs-php-building-site-m4-exercise-files/After/3 - Routing/angularjs-php/app.js",
+		"/Users/Adedoyin/Downloads/Thesis/Pluralsight - Building a Site with AngularJS and PHP/Exercise Files/Exercise Files/4-angularjs-php-building-site-m4-exercise-files/After/3 - Routing/angularjs-php/services/getStates.php",
+		"/Users/Adedoyin/Downloads/Thesis/Lynda - Up and Running with AngularJS (2014)/Exercise Files/03_06/finished/angular/js/controllers.js",
+		"/Users/Adedoyin/Downloads/Thesis/Pluralsight - Building a Site with AngularJS and PHP/Exercise Files/Exercise Files/4-angularjs-php-building-site-m4-exercise-files/After/3 - Routing/angularjs-php/classes/CountryRepository.php",
+		"/Users/Adedoyin/Downloads/Thesis/Pluralsight - Building a Site with AngularJS and PHP/Exercise Files/Exercise Files/4-angularjs-php-building-site-m4-exercise-files/After/3 - Routing/angularjs-php/classes/State.php",
+		"/Users/Adedoyin/Downloads/Thesis/Lynda - Up and Running with AngularJS (2014)/Exercise Files/03_06/finished/angular/js/data.json",
+		"/Users/Adedoyin/Downloads/Thesis/Lynda - Up and Running with AngularJS (2014)/Exercise Files/03_06/finished/angular/js/app.js",
+		"/Users/Adedoyin/Downloads/Thesis/Pluralsight - Building a Site with AngularJS and PHP/Exercise Files/Exercise Files/4-angularjs-php-building-site-m4-exercise-files/After/3 - Routing/angularjs-php/services/getCountries.php",
+		"/Users/Adedoyin/Downloads/Thesis/Pluralsight - Building a Site with AngularJS and PHP/Exercise Files/Exercise Files/4-angularjs-php-building-site-m4-exercise-files/After/2 - Custom Directive/angularjs-php/app.js",
+		"/Users/Adedoyin/Downloads/Thesis/Pluralsight - Building a Site with AngularJS and PHP/Exercise Files/Exercise Files/4-angularjs-php-building-site-m4-exercise-files/After/1 - Data Binding, Event Handling/angularjs-php/app.js",
+		"/Users/Adedoyin/Downloads/Thesis/Pluralsight - Building a Site with AngularJS and PHP/Exercise Files/Exercise Files/4-angularjs-php-building-site-m4-exercise-files/After/4 - Updated Backend/angularjs-php/initDB.php",
+		"/Users/Adedoyin/Downloads/Thesis/Pluralsight - Building a Site with AngularJS and PHP/Exercise Files/Exercise Files/3-angularjs-php-building-site-m3-exercise-files/After/angularjs-php/classes/Country.php",
+		"/Users/Adedoyin/Downloads/Thesis/Pluralsight - Building a Site with AngularJS and PHP/Exercise Files/Exercise Files/3-angularjs-php-building-site-m3-exercise-files/After/angularjs-php/classes/CountryRepository.php",
+		"/Users/Adedoyin/Downloads/Thesis/Pluralsight - Building a Site with AngularJS and PHP/Exercise Files/Exercise Files/3-angularjs-php-building-site-m3-exercise-files/After/angularjs-php/services/getCountries.php",
+		"/Users/Adedoyin/Downloads/Thesis/Pluralsight - Building a Site with AngularJS and PHP/Exercise Files/Exercise Files/3-angularjs-php-building-site-m3-exercise-files/After/angularjs-php/json.php",
+		"/Users/Adedoyin/Downloads/Thesis/Pluralsight - Building a Site with AngularJS and PHP/Exercise Files/Exercise Files/2-angularjs-php-building-site-m2-exercise-files/After/angularjs-php/app.js",
+		"/Users/Adedoyin/Downloads/Thesis/Pluralsight - Building a Site with AngularJS and PHP/Exercise Files/Exercise Files/3-angularjs-php-building-site-m3-exercise-files/Before/angularjs-php/app.js",
+		"/Users/Adedoyin/Downloads/Thesis/Pluralsight - Building a Site with AngularJS and PHP/Exercise Files/Exercise Files/3-angularjs-php-building-site-m3-exercise-files/After/angularjs-php/app.js",
+		"/Users/Adedoyin/Downloads/Thesis/Pluralsight - Building a Site with AngularJS and PHP/Exercise Files/Exercise Files/3-angularjs-php-building-site-m3-exercise-files/After/angularjs-php/classes/State.php",
+		"/Applications/MAMP/htdocs/AI_251014/settings.php",
+		"/Applications/MAMP/htdocs/AI_251014/include/footer.php",
+		"/Applications/MAMP/htdocs/AI_251014/include/menu.php",
+		"/Applications/MAMP/htdocs/AI_251014/include/menu_front.php",
+		"/Applications/MAMP/htdocs/AI_251014/settings_employer.php",
+		"/Applications/MAMP/htdocs/AI_251014/AI.todo",
+		"/Applications/MAMP/htdocs/AI_251014/recover.php",
+		"/Applications/MAMP/htdocs/AI_251014/change-password.php",
+		"/Applications/MAMP/htdocs/AI_251014/wp-config.php",
+		"/Applications/MAMP/htdocs/AI_251014/download.php",
+		"/Applications/MAMP/htdocs/AI_251014/talent.php",
+		"/Applications/MAMP/htdocs/AI_251014/main/connection/search_connection.php",
+		"/Applications/MAMP/htdocs/AI_251014/location.php",
+		"/Applications/MAMP/htdocs/AI_251014/home.php",
+		"/Applications/MAMP/htdocs/AI_251014/inbox-messages.php",
+		"/Applications/MAMP/htdocs/AI_251014/cppdf/include/functions.inc.php",
+		"/Applications/MAMP/htdocs/AI_251014/demo.php",
+		"/Applications/MAMP/htdocs/AI_251014/jobSearch.php",
+		"/Applications/MAMP/htdocs/AI_251014/jobDetail.php",
+		"/Applications/MAMP/htdocs/AI_251014/reply.php",
+		"/Applications/MAMP/htdocs/AI_251014/cppdf/dompdf_config.inc.php",
+		"/Applications/MAMP/htdocs/AI_251014/cppdf/lib/res/html.css",
+		"/Applications/MAMP/htdocs/AI_251014/cppdf/lib/ttf2ufm/README.TXT",
+		"/Applications/MAMP/htdocs/AI_251014/cppdf/lib/class.pdf.php",
+		"/Applications/MAMP/htdocs/AI_251014/messages.php",
+		"/Applications/MAMP/htdocs/AI_251014/employer_home.php",
+		"/Applications/MAMP/htdocs/AI_251014/employer_profile.php",
+		"/Applications/MAMP/htdocs/AI_251014/profile.php",
+		"/Applications/MAMP/htdocs/AI_251014/css/rotate.css",
+		"/Applications/MAMP/htdocs/AI_251014/css/main.css",
+		"/Applications/MAMP/htdocs/AI_251014/css/africanIntern.css",
+		"/Applications/MAMP/htdocs/AI_251014/main/classes/common.php",
+		"/Applications/MAMP/htdocs/AI_251014/dashboard.php",
+		"/Applications/MAMP/htdocs/AI_251014/dashboard-detail.php",
+		"/Applications/MAMP/htdocs/AI_251014/jobs.php",
+		"/Applications/MAMP/htdocs/AI_251014/blog.php",
+		"/Applications/MAMP/htdocs/AI_251014/blog_front.php",
+		"/Applications/MAMP/htdocs/AI_251014/blogDetail.php",
+		"/Applications/MAMP/htdocs/AI_251014/main/classes/pagination.php",
+		"/Applications/MAMP/htdocs/AI_251014/css/app/app-unmin-blessed2.css",
+		"/Applications/MAMP/htdocs/AI_251014/new-index.php",
+		"/Applications/MAMP/htdocs/AI_251014/css/jquery.bxslider.css",
+		"/Applications/MAMP/htdocs/AI_251014/css/external.css",
+		"/Applications/MAMP/htdocs/AI_251014/new-post.php",
+		"/Applications/MAMP/htdocs/AI_251014/comment_system/commentajax.php",
+		"/Applications/MAMP/htdocs/AI_251014/comment_system/comment.php",
+		"/Applications/MAMP/htdocs/AI_251014/comment_system/config.php",
+		"/Applications/MAMP/htdocs/AI_251014/js/comment/comment.js",
+		"/Applications/MAMP/htdocs/AI_251014/blog_posting.php",
+		"/Applications/MAMP/htdocs/AI_251014/css/app/app-min-blessed1.css",
+		"/Applications/MAMP/htdocs/AI_251014/css/app/app-min-blessed2.css",
+		"/Applications/MAMP/htdocs/AI_251014/include/header.php",
+		"/Applications/MAMP/htdocs/AI_251014/blogDetail_home.php",
+		"/Applications/MAMP/htdocs/AI_251014/css/button.css",
+		"/Applications/MAMP/htdocs/AI_251014/css/bootstrap.css",
+		"/Applications/MAMP/htdocs/AI_251014/css/team.css",
+		"/Applications/MAMP/htdocs/AI_251014/benefits.php",
+		"/Applications/MAMP/htdocs/AI_251014/ambassador.php",
+		"/Applications/MAMP/htdocs/AI_251014/New-with-mobile-friendly/app-unmin.js",
+		"/Applications/MAMP/htdocs/AI_251014/signUp_Pricing.php",
+		"/Applications/MAMP/htdocs/AI_251014/studentSearch.php",
+		"/Applications/MAMP/htdocs/AI_251014/search.php",
+		"/Applications/MAMP/htdocs/AI_251014/student.php",
+		"/Applications/MAMP/htdocs/AI_251014/student-search.php"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			".php",
+			"owl-carousel",
+			"submit",
+			"user_id",
+			"update",
+			"#pagination",
+			"pagination",
+			"get_comments",
+			"sidemenu",
+			".read-more",
+			"read-more",
+			"sidemenu",
+			"btn btn-primary",
+			"blog_picture",
+			".active",
+			"header .header-items .nav nav ul li a",
+			".active",
+			"yourpar",
+			"searchTextField",
+			"hand",
+			"owlcarousel",
+			"owl-carousel",
+			"section.search-header",
+			".search-content",
+			".search-content p",
+			".search-content h1",
+			"search-content",
+			"title-content",
+			".placeholder",
+			".search",
+			"search-content",
+			".title-content {\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%, -50%);\n  color: white;\n  text-align: center;\n}",
+			"search-content",
+			"body.page-home-path section.search-header",
+			".fa",
+			"fa fa-user",
+			".fa fa-user",
+			"fa-user",
+			".fa-user",
+			"body.page-home-path section.search-header",
+			".burger",
+			"burger",
+			"nav-inner",
+			".page-home-path",
+			"page-home-path",
+			"list-view",
+			".fa fa-search",
+			"fa fa-search",
+			"fa-search",
+			"@media"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"title-content"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.sftp":
+	{
+		"height": 100.0
+	},
+	"output.xdebug":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "thesis.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"cppdf/lib/ttf2ufm/ttf2ufm-src/app/netscape/nspr"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+		"xdebug":
+		{
+			"restore_index":
+			{
+				"79":
+				{
+					"group": 0,
+					"index": 0
+				},
+				"80":
+				{
+					"group": 0,
+					"index": 1
+				},
+				"81":
+				{
+					"group": 0,
+					"index": 2
+				}
+			},
+			"restore_layout":
+			{
+				"cells":
+				[
+					[
+						0,
+						0,
+						1,
+						1
+					]
+				],
+				"cols":
+				[
+					0.0,
+					1.0
+				],
+				"rows":
+				[
+					0.0,
+					1.0
+				]
+			}
+		}
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 179.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

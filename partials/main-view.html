@@ -1,0 +1,76 @@
+    
+    <br>
+    
+    
+    <!-- controller-->
+    <!--providerCtrl is an alias(alias can be reference later-->
+    <div class="container" ng-controller="ProviderController as providerCtrl">
+        <div > 
+                <h2 align="center"> Cloud Service Providers Selection Made Easy</h2>
+        </div>
+
+           
+           
+           <div class="search">
+               
+               <h1> Cloud Vendors Directory</h1>
+               <label>Enter Your Industry:</label>
+               <input ng-model="industry" ng-model="cost" type="text" autofocus>
+           </div>
+            <br>
+           <br>
+            <!-- data binding-->
+                    <!-- ng-repeat is used to repeat html data in the data binding process-->
+             <table class="table">
+<thead>
+<tr>
+<th><b></b></th>
+
+<th width="25%"><b>PROVIDER NAME</b></th>
+<th width="25%"> <b>DESCRIPTION</b></th>
+<th width="25%"> <b>DEPLOYMENT MODEL</b></th>
+
+
+</tr>
+  </thead>
+            </table> 
+            
+                <br>    
+
+<div class="row" ng-repeat="p in providerCtrl.providers | filter:industry | filter:cost">
+<!--   <ul ng-repeat="p in providerCtrl.providers">-->
+
+   <div class="col-xs-3">
+
+</div>
+  
+   
+   <div class="col-xs-6">
+   <div class="row">
+      <div class="col-xs-6 col-md-4">
+       <a href ng-href="#/services/{{p.cloud_id}}">
+<!--            <li>-->
+                <div id="provider">
+                <img ng-src="images/{{ p.image }}">
+<!--                {{ p.Provider_Name | uppercase }}-->
+                </div>
+                 </a>
+       </div>
+       <div class="col-xs-12 col-md-8">
+      <p>{{ p.description }} </p>
+       </div>
+   </div>
+   <hr>
+    
+        </div>
+        <div class="col-xs-3">
+       <p>{{ p.deploy_model }}<p>
+
+</div>
+       
+        
+        </div>
+                   
+
+               </div>  
+      
