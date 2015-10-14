@@ -15,7 +15,13 @@
     <div class="col-xs-6">
 
 <uib-tabset>
-    <uib-tab heading="Why?">This application was developed for my Master"s thesis project.</uib-tab>
+    <uib-tab heading="Why?">This application was developed for my Master"s thesis project.
+    
+    It is suitable for seeing list of cloud vendors and their related services. 
+    
+    It is also used for accessing the suitability of your company or project for the cloud. That is, it examines if your company/project could benefit from the good things that Cloud offers.
+    
+    This application is also suitable for examining if you should buy a private cloud or consider renting a cloud technology based on some characteristics of your company/project.</uib-tab>
     <uib-tab ng-repeat="tab in tabs" heading="{{tab.title}}" active="tab.active">
       {{tab.content}}
     </uib-tab>

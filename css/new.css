@@ -11,8 +11,8 @@
 /* Search Styles */
 
 .search {
-  background: #063642;
-  color: #EEE8D5;
+  background: #09A9D2;
+/*  color: #EEE8D5;*/
   width: 90%;
   min-width: 320px;
   max-width: 500px;
@@ -24,6 +24,9 @@
 }
 
 .search h1 {
+  color: #EEE8D5;
+}
+.search label {
   color: #EEE8D5;
 }
 .css-form input.ng-invalid.ng-touched {

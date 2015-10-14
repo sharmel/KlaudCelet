@@ -43,14 +43,14 @@
 
 
   </div>
-    <div class="collapse navbar-collapse navbar-ex1-collapse">
+    <div class="collapse navbar-collapse navbar-ex1-collapse" ng-controller="MenuController">
       <ul class="nav navbar-nav navbar-right">
         <ul class="nav nav-pills">
            <!--<li class="active"><a href="africaintern.com">Home</a></li>-->
-<li class="active"><a href="#/">Home</a></li>
-<li ><a href="#/buy-rent">Buy/Rent</a></li>
-<li ><a href="#/migrate">Migrate</a></li>
-<li ><a href="#/about">About</a></li>
+<li ng-class="{ active: isActive('#/')}"><a href="#/">Home</a></li>
+<li ng-class="{ active: isActive('#/buy-rent')}"><a href="#/buy-rent">Buy/Rent</a></li>
+<li ng-class="{ active: isActive('#/migrate')}"><a href="#/migrate">Migrate</a></li>
+<li ng-class="{ active: isActive('#/<about></about>')}"><a href="#/about">About</a></li>
 
 
 <!--

@@ -1,9 +1,11 @@
 (function() {
-    //module
+    //module (with 3 dependencies )
     var app = angular.module('provider_list', ['ngRoute','ngAnimate', 'ui.bootstrap']);
     
     
-    //Using AngularJs service instead of using PHP RestFul API service
+    //Using AngularJs custom service instead of using PHP RestFul API service
+    //factory,service and provider= used to create angualrjs custom services
+    //factories and services are basically the same thing. they are similar
     
     app.factory('providerService', function($http){ 
      var baseUrl = 'services/';  
@@ -28,12 +30,13 @@
     
     app.controller('ProviderController', function(providerService,$scope) {
 
-        var that = this;
-        
+        var that = this; //that is just a variable name. this inside here refers to the above function where it is inside,i.e function(providerService,$scope)
         //this: current function i.e here where it is being called
 
         providerService.getProviders().success(function(data) {            
             //$scope.data=data;
+            
+            //this: inside here refers to function(data). I don't have access to the function(providerService,$scope) that's why I created the global variable that and call it inside this function(data)
             that.providers = data;
             //console.log(that.provider);     
         });
@@ -80,7 +83,7 @@
         
         $scope.find =function(){
             $scope.id = 1;
-                //$routeParams.cloud_id;
+            $routeParams.cloud_id;
            //console.log($scope.id);
            
             providerService.getProviders().then(function(data) {
@@ -136,7 +139,9 @@
     
         $scope.master = angular.copy(user);
           
-          console.log(user.alignment + user.maturity);    
+          user.result=(user.alignment + user.maturity+user.complexity+user.compatibility+user.legacy_system+user.it_change+user.cloud_coverage+user.it_workload+user.it_control+user.data_significance+user.data_confidentiality+user.disaster_risks+user.failure_rate+user.it_support+user.manpower+user.it_skills+user.time+user.space+user.it_solutions+user.user_mobility+user.it_expansion+user.business_scale+user.development+user.it_conservativeness+user.it_decisveness)*15;
+          
+          console.log(user.result);    
           
       };
 
@@ -254,5 +259,11 @@
 //      
 };
         });
+    app.controller('MenuController',function($scope, $location) 
+{ 
+    $scope.isActive = function (viewLocation) { 
+        return viewLocation === $location.path();
+    };
+});
 
 })();

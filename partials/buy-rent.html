@@ -6,13 +6,29 @@
 <div class="row">
 <div class="col-xs-9">
     
+   
     
  <div ng-controller="BuyRentController">
+ 
+  <div align="center">
+            <button type="button" class="btn btn-danger" ng-if="user.result <= 180"> &gt; | 180 Rent a Public cloud deployment model</button> <br>
+<!--            <button type="button" class="btn btn-warning" ng-if="user.result >3760 || industry.SI < 4600"> 3760 - 4600 | Further criteria needed</button><br>-->
+            <button type="button" class="btn btn-success" ng-if="user.result > 180 && user.result <= 375"> &lt; 375 | Buy a Private cloud deployment model</button>
+            
+    </div>
+    <br>
+    <br>
+    
+    <label>Enter Your Industry:</label>
+               <input ng-model="industry" ng-model="cost" type="text" autofocus>
   
 <form name="form"  class="css-form" novalidate>
      
 <!--          <pre>user = {{user.alignment + user.maturity}} </pre>-->
-          <pre>Enter a number between 0 - 1</pre>
+          <pre>Enter a number between 0 - 1 for weighing different characteristics of your project/company.</pre>
+          <pre>Determine either renting a public cloud or buying a private cloud best suits your project/company.</pre>
+          
+          
 
      
       <fieldset id="itCondition" title="IT Condition">
@@ -250,7 +266,7 @@
       </div>
       
       <div class="form-group">
-        <label class="control-label col-md-4" for="legacy_systems">IT Decisiveness</label>
+        <label class="control-label col-md-4" for="legacysystems">IT Decisiveness</label>
         <div class="col-md-6">
    <input type="number" ng-model="user.it_decisveness" class="form-control" id="it_decisveness" placeholder="Enter a number" required>
           </div>
